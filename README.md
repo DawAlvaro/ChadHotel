@@ -75,6 +75,7 @@ El usuario administrador además, podrá crear nuevos anuncios.
 - Para el frontend usaré tailwind / css, vuejs y probablamente jquery
 - También usaré Chartjs para mostrar un gráfico con la información de una habitación (información aun por ver) o para mostrar el número de habitaciones disponibles
 - Animejs para las animaciones
+- Heroku para el despliegue
 
 # Diagrama de la base de datos
 ![image](https://user-images.githubusercontent.com/91119635/161538654-5ef40efc-18dc-4390-91ef-d485b8ec28d1.png)
