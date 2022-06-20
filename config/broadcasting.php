@@ -37,7 +37,10 @@ return [
             'app_id' => env('PUSHER_APP_ID'),
             'options' => [
                 'cluster' => env('PUSHER_APP_CLUSTER'),
-                'useTLS' => true,
+                //'encrypted' => true, //uncomment jika gunakan ssl
+                'host' => '127.0.0.1', //Url socket server
+                'port' => 6001,
+                'scheme' => 'http'
             ],
         ],
 
