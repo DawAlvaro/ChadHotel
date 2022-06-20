@@ -22,7 +22,7 @@
                             <th scope="row">{{ ($payments->currentpage() - 1) * $payments->perpage() + $loop->index + 1 }}
                             </th>
                             <td>{{ $payment->transaction->room->number }}</td>
-                            <td>{{ Helper::convertToRupiah($payment->price) }}</td>
+                            <td>{{ ($payment->price) }}€</td>
                             <td>{{ $payment->status }}</td>
                             <td>{{ Helper::dateFormatTime($payment->created_at) }}</td>
                             <td>{{ $payment->user->name }}</td>

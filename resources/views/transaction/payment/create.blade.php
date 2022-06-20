@@ -30,7 +30,7 @@
                             <label class=" col-sm-2 col-form-label">Room Price</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control"
-                                    value="{{ Helper::convertToRupiah($transaction->room->price) }}" readonly>
+                                    value="{{ ($transaction->room->price) }}€" readonly>
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -45,7 +45,7 @@
                             <label class="col-sm-2 col-form-label">Total Price</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control"
-                                    value="{{ Helper::convertToRupiah($transaction->getTotalPrice($transaction->room->price, $transaction->check_in, $transaction->check_out)) }}"
+                                    value="{{ ($transaction->getTotalPrice($transaction->room->price, $transaction->check_in, $transaction->check_out)) }}€"
                                     readonly>
                             </div>
                         </div>
@@ -53,14 +53,14 @@
                             <label class="col-sm-2 col-form-label">Paid Off</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control"
-                                    value="{{ Helper::convertToRupiah($transaction->getTotalPayment()) }}" readonly>
+                                    value="{{ ($transaction->getTotalPayment()) }}" readonly>
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label class="col-sm-2 col-form-label">Insufficient</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control"
-                                    value="{{ Helper::convertToRupiah($transaction->getTotalPrice($transaction->room->price, $transaction->check_in, $transaction->check_out) - $transaction->getTotalPayment()) }}"
+                                    value="{{ ($transaction->getTotalPrice($transaction->room->price, $transaction->check_in, $transaction->check_out) - $transaction->getTotalPayment()) }}"
                                     readonly>
                             </div>
                         </div>

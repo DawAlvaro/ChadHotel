@@ -38,7 +38,7 @@
                                     <div class="col-sm-10">
                                         <input type="text" class="form-control" id="room_price" name="room_price"
                                             placeholder="col-form-label"
-                                            value="{{ Helper::convertToRupiah($room->price) }}" readonly>
+                                            value="{{ ($room->price) }}" readonly>
                                     </div>
                                 </div>
                             </div>
@@ -75,7 +75,7 @@
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="total_price" name="total_price"
                                                 placeholder="col-form-label"
-                                                value="{{ Helper::convertToRupiah(Helper::getTotalPayment($dayDifference, $room->price)) }} "
+                                                value="{{ (Helper::getTotalPayment($dayDifference, $room->price)) }} "
                                                 readonly>
                                         </div>
                                     </div>
@@ -84,7 +84,7 @@
                                         <div class="col-sm-10">
                                             <input type="text" class="form-control" id="minimum_dp" name="minimum_dp"
                                                 placeholder="col-form-label"
-                                                value="{{ Helper::convertToRupiah($downPayment) }} " readonly>
+                                                value="{{ ($downPayment) }} " readonly>
                                         </div>
                                     </div>
                                     <div class="row mb-3">

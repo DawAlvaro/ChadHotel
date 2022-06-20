@@ -38,7 +38,7 @@
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
-                                <h5 class="card-title text-center">Hotel Information System</h5>
+                                <h5 class="card-title text-center">ChadHotel Information System</h5>
                             </div>
                         </div>
                         <form onsubmit="return disableButton()" class="form-signin" action="/postLogin" method="POST">
@@ -83,6 +83,7 @@
                                     </div>
                                 </div>
                             </div>
+                            
                             <hr class="my-4">
                             {{-- <p class="text-center">Doesnt have any account? <a href="/register">register</a></p> --}}
                         </form>

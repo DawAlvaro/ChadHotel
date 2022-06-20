@@ -68,37 +68,13 @@
                                     <td class="text-center">{{ $payment->transaction->getDateDifferenceWithPlural() }}
                                     </td>
                                     <td class="text-center">
-                                        {{ Helper::convertToRupiah($payment->transaction->room->price) }}</td>
+                                        {{($payment->transaction->room->price) }}</td>
                                     <td class="text-center">
-                                        {{ Helper::convertToRupiah($payment->transaction->getTotalPrice()) }}</td>
+                                        {{($payment->transaction->getTotalPrice()) }}</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
-                    <hr>
-                    <div class="products p-2">
-                        <table class="table table-borderless">
-                            <tbody>
-                                <tr class="add">
-                                    <td></td>
-                                    <td class="text-center">Minimum DownPayment</td>
-                                    <td class="text-center">Paid Off</td>
-                                    <td class="text-center">
-                                        insufficient payment</td>
-                                </tr>
-                                <tr class="content">
-                                    <td></td>
-                                    <td class="text-center">
-                                        {{ Helper::convertToRupiah($payment->transaction->getMinimumDownPayment()) }}</td>
-                                    <td class="text-center">{{ Helper::convertToRupiah($payment->price) }}</td>
-                                    <td class="text-center">
-                                        {{ $payment->transaction->getTotalPrice() - $payment->transaction->getTotalPayment() <= 0 ? '-' : Helper::convertToRupiah($payment->transaction->getTotalPrice($payment->transaction->room->price, $payment->transaction->check_in, $payment->transaction->check_out) - $payment->transaction->getTotalPayment()) }}
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <hr>
                     <div class="address p-2">
                         <table class="table table-borderless">
                             <tbody>
@@ -107,10 +83,9 @@
                                 </tr>
                                 <tr class="content">
                                     <td>
-                                        Customer ID : {{ $payment->transaction->customer->id }}
-                                        <br>Customer Name : {{ $payment->transaction->customer->name }}
-                                        <br> Customer Job : {{ $payment->transaction->customer->job }}
-                                        <br> Customer Address : {{ $payment->transaction->customer->address }}
+                                        Customer ID : {{ $payment->transaction->user->id }}
+                                        <br>Customer Name : {{ $payment->transaction->user->name }}
+                                        <br>Status: {{ $payment->transaction->status }}
                                         <br>
                                     </td>
                                 </tr>

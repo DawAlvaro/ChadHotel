@@ -64,7 +64,7 @@
                                                 <td>{{ $room->number }}</td>
                                                 <td>{{ $room->type->name }}</td>
                                                 <td>{{ $room->capacity }}</td>
-                                                <td>{{ Helper::convertToRupiah($room->price) }}</td>
+                                                <td>{{ ($room->price) }}€</td>
                                                 {{-- <td><span class="text">{{ $room->view }}</span></td> --}}
                                                 <td>{{ $room->roomStatus->name }}</td>
                                                 <td>

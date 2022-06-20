@@ -65,7 +65,7 @@
                                             <strong class="d-inline-block mb-2 text-secondary">{{ $room->capacity }}
                                                 {{ Str::plural('Person', $room->capacity) }}</strong>
                                             <h3 class="mb-0">{{ $room->number }} ~ {{ $room->type->name }}</h3>
-                                            <div class="mb-1 text-muted">{{ Helper::convertToRupiah($room->price) }} /
+                                            <div class="mb-1 text-muted">{{($room->price) }}€ /
                                                 Day
                                             </div>
                                             <div class="wrapper">

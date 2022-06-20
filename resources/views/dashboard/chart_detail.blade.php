@@ -1,5 +1,5 @@
 @extends('template.master')
-@section('title', 'Dashboard')
+@section('title', 'Room Dashboard')
 @section('content')
     <div class="row">
         <div class="col-lg-12">
@@ -15,16 +15,14 @@
                     class="row card g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col d-flex flex-column position-static">
                         <strong class="d-inline-block mb-2 text-primary">
-                            <a class="bg-dark p-3 text-center align-middle text-white" style="border-bottom-right-radius: 1rem"
+                            <span class="bg-dark p-3 text-center align-middle text-white" style="border-bottom-right-radius: 1rem"
                                 href="{{ route('room.show', ['room' => $transaction->room->id]) }}">
                                 {{ $transaction->room->number }}
-                            </a>
+                        </span>
                         </strong>
                         <div class="p-4">
                             <h3 class="mb-0">
-                                <a href="{{ route('customer.show', ['customer' => $transaction->customer->id]) }}">
-                                    {{ $transaction->customer->name }}
-                                </a>
+                                    {{ $transaction->user->name }}
                             </h3>
                             <div class="mb-1 text-muted">
                                 {{ Helper::dateFormat($transaction->check_in) }} -
@@ -34,7 +32,7 @@
                         </div>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img width="200" height="250" src="{{ $transaction->customer->user->getAvatar() }}" alt="">
+                        <img width="200" height="250" src="{{ $transaction->user->getAvatar() }}" alt="">
                     </div>
                 </div>
             </div>

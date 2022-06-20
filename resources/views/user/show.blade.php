@@ -15,7 +15,7 @@
                         <h5 class="mt-0">Email: {{ $user->email }}</h5>
                         <h5 class="mt-0">Name: {{ $user->name }}</h5>
                         <h5 class="mt-0">Role: {{ $user->role }}</h5>
-                        <h5 class="mt-0">Phone: {{ $user->phone }}</h5>
+                        <h5 class="mt-0">Phone: +{{ $user->phone }}</h5>
                         <h5 class="mt-0">Gender: {{ $user->gender }}</h5>
                     </div>
                 </div>
