@@ -67,14 +67,13 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 # ChadHotel
 
 # Descripción - objetivo de la aplicación
+El administrador será el encargado de administrar los usuarios, información de las habitaciones, disponibilidad, edición y ver el seguimiento de todas las reservas.
 Es una aplicación de reserva de hoteles. El usuario podrá ver y reservar todas las habitaciones disponibles, además de ver, cancelar o modificar la reserva.
-El usuario administrador además, podrá crear nuevos anuncios.
 
 # Tecnología
 - Para el backend usaré PHP en el framework Laravel v8
-- Para el frontend usaré tailwind / css, vuejs y probablamente jquery
-- También usaré Chartjs para mostrar un gráfico con la información de una habitación (información aun por ver) o para mostrar el número de habitaciones disponibles
-- Animejs para las animaciones
+- Para el frontend usaré tailwind / css, y probablamente jquery
+- También usaré Chartjs para mostrar un gráfico con la información de las reservas mensuales y ver quien tiene reservado cada dia una habitación
 - Heroku para el despliegue
 
 # Diagrama de la base de datos
@@ -82,4 +81,16 @@ El usuario administrador además, podrá crear nuevos anuncios.
 
 
 # Configuración
-Se podrá ver la landing page al ingresar a la aplicación y ver las diferentes habitaciones disponibles ( o no, aun por determinar) y se requerirá estar registrado para poder hacer la reserva
+Se podrá ver la landing page al ingresar a la aplicación  y se requerirá estar registrado para poder hacer la reserva.
+
+# Instalación
+Se recomienda ddev--local con docker para instalar la aplicación en local, para su instalación y configuración, seguir la documentación oficial en:
+https://ddev.readthedocs.io/en/stable/
+
+# Manual de uso
+Usuario rol cliente de prueba: freida33@example.com
+Contraseña: admin
+
+# Login
+![image](https://user-images.githubusercontent.com/91119635/175100185-3528a511-6689-4743-85d1-b2973f4f204d.png)
+
