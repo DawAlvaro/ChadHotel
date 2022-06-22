@@ -78,7 +78,7 @@ El usuario administrador además, podrá crear nuevos anuncios.
 - Heroku para el despliegue
 
 # Diagrama de la base de datos
-![image](https://user-images.githubusercontent.com/91119635/161538654-5ef40efc-18dc-4390-91ef-d485b8ec28d1.png)
+![image](https://user-images.githubusercontent.com/91119635/175098912-8ac1aa4b-95f1-408d-ad4c-b060b59b5526.png)
 
 
 # Configuración
