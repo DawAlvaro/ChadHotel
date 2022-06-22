@@ -94,3 +94,27 @@ Contraseña: admin
 # Login
 ![image](https://user-images.githubusercontent.com/91119635/175100185-3528a511-6689-4743-85d1-b2973f4f204d.png)
 
+Se puede ver un gráfico con las reservas activas del mes y una tabla con las mismas y la información correspondiente
+![image](https://user-images.githubusercontent.com/91119635/175100825-0fd3988d-7431-4eef-ab5d-8e1a7c7f0d93.png)
+
+Además pinchando en el gráfico en un dia se puede ver quien ha reservado la habitación
+![image](https://user-images.githubusercontent.com/91119635/175101305-580b220a-6838-4a43-8671-1556f8a9e20d.png)
+
+En transactions está toda la información de las reservas tanto activas como antiguas.
+![image](https://user-images.githubusercontent.com/91119635/175101427-ac0bceca-4aae-4f57-a9bc-e53716c3c9ba.png)
+
+Donde además el administrador podrá reservar una habitación para cualquier usuario que quiera
+![image](https://user-images.githubusercontent.com/91119635/175101545-a270e3b8-afea-4468-821c-ba8c4cd4a4f2.png)
+
+![image](https://user-images.githubusercontent.com/91119635/175101602-8ab126e9-980a-495d-9f2f-1a6a069d074f.png)
+
+![image](https://user-images.githubusercontent.com/91119635/175101667-15f70d22-e7c0-4675-a20b-fcdc6c8d6215.png)
+
+![image](https://user-images.githubusercontent.com/91119635/175101706-9d9492c5-7c19-4bff-9978-792d309e9c30.png)
+
+Los usuarios podrán ver y descargar su factura:
+
+![image](https://user-images.githubusercontent.com/91119635/175101786-0150bfed-3c31-44b6-b543-f2abab0c57fd.png)
+
+
+
