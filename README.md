@@ -70,6 +70,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 El administrador será el encargado de administrar los usuarios, información de las habitaciones, disponibilidad, edición y ver el seguimiento de todas las reservas.
 Es una aplicación de reserva de hoteles. El usuario podrá ver y reservar todas las habitaciones disponibles, además de ver, cancelar o modificar la reserva.
 
+# Enlace al video funcionamiento en Heroku:
+https://youtu.be/2SvO8eDsnfw
+
 # Tecnología
 - Para el backend usaré PHP en el framework Laravel v8
 - Para el frontend usaré tailwind / css, y probablamente jquery
