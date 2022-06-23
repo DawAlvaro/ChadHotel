@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{-- Icon --}}
-    <link rel="icon" href="{{ asset('img/logo/sip.png') }}">
+    <link rel="icon" href="{{ asset('img/logo/logo.png') }}">
     {{-- style --}}
     <link rel="stylesheet" href="{{ asset('style/css/style.css') }}">
     <link href="{{ mix('/css/app.css') }}" rel="stylesheet">
+
+    <script src="{{ asset('js/carrusel.js') }}"></script>
 
     {{-- Sweet Alert --}}
     <link rel="stylesheet" href="{{ asset('package/sweetalert2/dist/sweetalert2.min.css') }}">
@@ -53,7 +55,7 @@
 
         </div>
     </main>
-    <footer class="footer mt-auto py-2 shadow-sm border-top mt-3" style="background: #f8f9fa; height:55px">
+    <footer class="footer mt-auto py-2 shadow-sm border-top mt-3" style="height:55px">
         @include('template.include._footer')
     </footer>
     <script src="{{ mix('/js/app.js') }}"></script>

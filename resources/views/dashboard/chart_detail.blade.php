@@ -1,14 +1,17 @@
 @extends('template.master')
 @section('title', 'Room Dashboard')
 @section('content')
+    <!-- Information about the guest who reserved a room in chartjs -->
     <div class="row">
         <div class="col-lg-12">
             <h3 class="p-3 text-center">
+                <!-- Date reserved -->
                 Occupied room at {{ Helper::dateFormat($date) }}
             </h3>
         </div>
     </div>
     <div class="row">
+        
         @foreach ($transactions as $transaction)
             <div class="col-md-6">
                 <div

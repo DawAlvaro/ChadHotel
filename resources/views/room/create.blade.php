@@ -74,7 +74,7 @@
                     <div class="col-md-12">
                         <label for="price" class="form-label">Price</label>
                         <input room="text" class="form-control @error('price') is-invalid @enderror" id="price"
-                            name="price" value="{{old('price')}}" placeholder="ex: 500000">
+                            name="price" value="{{old('price')}}" placeholder="ex: 500">
                         @error('price')
                         <div class="text-danger mt-1">
                             {{ $message  }}

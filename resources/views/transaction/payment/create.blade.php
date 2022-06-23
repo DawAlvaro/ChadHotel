@@ -1,5 +1,5 @@
 @extends('template.master')
-@section('title', $transaction->customer->name . ' Pay Reservation')
+@section('title', $transaction->user->name . ' Pay Reservation')
 @section('content')
     <div class="container">
         <div class="row">
@@ -64,6 +64,7 @@
                                     readonly>
                             </div>
                         </div>
+                        @if (auth()->user()->role == 'admin')
                         <div class="row">
                             <div class="col-lg-12">
                                 <form method="POST"
@@ -89,12 +90,13 @@
                                 </form>
                             </div>
                         </div>
+                        @endif
                     </div>
                 </div>
             </div>
             <div class="col-lg-3 mt-2">
                 <div class="card shadow-sm">
-                    <img src="{{ $transaction->customer->user->getAvatar() }}"
+                    <img src="{{ $transaction->user->getAvatar() }}"
                         style="border-top-right-radius: 0.5rem; border-top-left-radius: 0.5rem">
                     <div class="card-body">
                         <table>
@@ -102,40 +104,30 @@
                                 <td style="text-align: center; width:50px">
                                     <span>
                                         <i
-                                            class="fas {{ $transaction->customer->gender == 'Male' ? 'fa-male' : 'fa-female' }}">
+                                            class="fas {{ $transaction->user->gender == 'Male' ? 'fa-male' : 'fa-female' }}">
                                         </i>
                                     </span>
                                 </td>
                                 <td>
-                                    {{ $transaction->customer->name }}
+                                    {{ $transaction->user->name }}
                                 </td>
                             </tr>
                             <tr>
                                 <td style="text-align: center; ">
                                     <span>
-                                        <i class="fas fa-user-md"></i>
+                                        <i class="fas fa-envelope"></i>
                                     </span>
                                 </td>
-                                <td>{{ $transaction->customer->job }}</td>
+                                <td>{{ $transaction->user->email }}</td>
                             </tr>
                             <tr>
                                 <td style="text-align: center; ">
                                     <span>
-                                        <i class="fas fa-birthday-cake"></i>
-                                    </span>
-                                </td>
-                                <td>
-                                    {{ $transaction->customer->birthdate }}
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: center; ">
-                                    <span>
-                                        <i class="fas fa-map-marker-alt"></i>
+                                        <i class="fas fa-phone"></i>
                                     </span>
                                 </td>
                                 <td>
-                                    {{ $transaction->customer->address }}
+                                    +{{ $transaction->user->phone }}
                                 </td>
                             </tr>
                         </table>

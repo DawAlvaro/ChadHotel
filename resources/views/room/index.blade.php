@@ -7,7 +7,6 @@
             width: 150px;
             height: 100px;
             overflow: hidden;
-            /* white-space: nowrap; */
             text-overflow: ellipsis;
         }
 
@@ -18,6 +17,7 @@
     <div class="row">
         <div class="col-lg-12">
             <div class="row mt-2 mb-2">
+                @if (auth()->user()->role != 'Customer')
                 <div class="col-lg-6 mb-2">
                     <div class="d-grid gap-2 d-md-block">
                         <a href="{{ route('room.create') }}" class="btn btn-sm shadow-sm myBtn border rounded">
@@ -29,6 +29,7 @@
                         </a>
                     </div>
                 </div>
+                @endif
                 <div class="col-lg-6 mb-2">
                     <form class="d-flex" method="GET" action="{{ route('room.index') }}">
                         <input class="form-control me-2" room="search" placeholder="Search by number" aria-label="Search"
@@ -52,7 +53,9 @@
                                             <th scope="col">Price / Day</th>
                                             {{-- <th scope="col">View</th> --}}
                                             <th scope="col">Status</th>
+                                            @if (auth()->user()->role != 'Customer')
                                             <th scope="col">Action</th>
+                                            @endif
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -65,8 +68,8 @@
                                                 <td>{{ $room->type->name }}</td>
                                                 <td>{{ $room->capacity }}</td>
                                                 <td>{{ ($room->price) }}€</td>
-                                                {{-- <td><span class="text">{{ $room->view }}</span></td> --}}
                                                 <td>{{ $room->roomStatus->name }}</td>
+                                                @if (auth()->user()->role != 'Customer')
                                                 <td>
                                                     <a class="btn btn-light btn-sm rounded shadow-sm border"
                                                         href="{{ route('room.edit', ['room' => $room->id]) }}"
@@ -91,6 +94,7 @@
                                                         <i class="fas fa-info-circle"></i>
                                                     </a>
                                                 </td>
+                                                @endif
                                             </tr>
                                         @empty
                                             <tr>

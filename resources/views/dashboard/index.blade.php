@@ -1,7 +1,7 @@
 @extends('template.master')
 @section('title', 'Dashboard')
 @section('head')
-    {{-- <link rel="stylesheet" href="{{ asset('style/css/admin.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('style/css/styles.css') }}">
 @endsection
 @if (auth()->user()->role == 'Super' || auth()->user()->role == 'Admin')
 @section('content')
@@ -122,13 +122,164 @@
 @endif
 @if (auth()->user()->role == 'Customer')
 @section('content')
-    <div class="row mt-2 mb-2">
-        <div class="col-lg-4 mb-2">
+<script src="{{ asset('js/carrusel.js') }}"></script>
+<div class="Carousel">
+    <h2>Our installations</h2>
+        <div class="button">
             <form class="d-flex" method="GET" action="{{ route('transaction.reservation.pickFromCustomer') }}">
-                <button class="btn btn-outline-dark" type="submit">Nueva reserva</button>
+                <button class="btn btn-outline-dark" style="width:400px; height:50px"; type="submit">Make your reservation now</button>
             </form>
         </div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="slick">
+                <div>
+                    <a href="./images/1.jpg">
+                        <h4 style="color: rgb(255, 255, 0)">Rooms</h4>
+                        <picture>
+                            <img src="./images/1.jpg" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="slick">
+                <div>
+                    <a href="./images/2.jpg">
+                        <h4 style="color: rgb(255, 255, 0)">Swimming pool</h4>
+                        <picture>
+                            <img src="./images/2.jpg" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="slick">
+                <div>
+                    <a href="./images/3.jpg">
+                        <h4 style="color: rgb(255, 255, 0)">Spa</h4>
+                        <picture>
+                            <img src="./images/3.jpg" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="slick">
+                <div>
+                    <a href="./images/4.jpg">
+                        <h4 style="color: rgb(255, 255, 0)">Tourist route</h4>
+                        <picture>
+                            <img src="./images/4.jpg" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="slick">
+                <div>
+                    <a href="./images/5.jpg">
+                        <h4 style="color: rgb(255, 255, 0)">Childrens free</h4>
+                        <picture>
+                            <img src="./images/5.jpg" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="slick">
+                <div>
+                    <a href="./images/6.jpg">
+                        <h4 style="color: rgb(255, 255, 0)">Massage</h4>
+                        <picture>
+                            <img src="./images/6.jpg" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="slick">
+                <div>
+                    <a href="./images/7.jpg">
+                        <h4 style="color: rgb(255, 255, 0)">Bussiness</h4>
+                        <picture>
+                            <img src="./images/7.jpg" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="slick">
+                <div>
+                    <a href="./images/8.jpg">
+                        <h4 style="color: rgb(255, 255, 0)">Theatre</h4>
+                        <picture>
+                            <img src="./images/8.jpg" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="slick">
+                <div>
+                    <a href="./images/9.jpg">
+                        <h4 style="color: rgb(255, 255, 0)">Gym</h4>
+                        <picture>
+                            <img src="./images/9.jpg" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="slick">
+                <div>
+                    <a href="./images/10.jpg">
+                        <h4 style="color: rgb(255, 255, 0)">Restaurant</h4>
+                        <picture>
+                            <img src="./images/10.jpg" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="slick">
+                <div>
+                    <a href="./images/11.jpg">
+                        <h4 style="color: rgb(255, 255, 0)">Views</h4>
+                        <picture>
+                            <img src="./images/11.jpg" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="slick">
+                <div>
+                    <a href="./images/12.jpg">
+                        <h4 style="color: rgb(255, 255, 0)">And much more</h4>
+                        <picture>
+                            <img src="./images/12.jpg" alt="Image">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+        </div>
+
     </div>
+</div>
+<script defer src="{{ asset('js/carrusel.js') }}"></script>
+
 @endsection
 @endif
 @section('footer')

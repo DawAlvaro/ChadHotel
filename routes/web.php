@@ -42,6 +42,7 @@ Route::group(['middleware' => []], function () {
     Route::post('/room/{room}/image/upload', [ImageController::class, 'store'])->name('image.store');
     Route::delete('/image/{image}', [ImageController::class, 'destroy'])->name('image.destroy');
 
+    /* Create a group for transaction */ 
     Route::name('transaction.reservation.')->group(function () {
         Route::get('/createIdentity', [TransactionRoomReservationController::class, 'createIdentity'])->name('createIdentity');
         Route::get('/pickFromCustomer', [TransactionRoomReservationController::class, 'pickFromCustomer'])->name('pickFromCustomer');
@@ -52,6 +53,7 @@ Route::group(['middleware' => []], function () {
         Route::post('/{customer}/{room}/payDownPayment', [TransactionRoomReservationController::class, 'payDownPayment'])->name('payDownPayment');
     });
 
+    /* Resources */
     Route::resource('customer', CustomerController::class);
     Route::resource('type', TypeController::class);
     Route::resource('room', RoomController::class);
@@ -60,11 +62,15 @@ Route::group(['middleware' => []], function () {
     Route::resource('dashboard', TransactionController::class);
     Route::resource('facility', FacilityController::class);
 
+    /* Payments routes and invoice */
+
     Route::get('/payment', [PaymentController::class, 'index'])->name('payment.index');
     Route::get('/payment/{payment}/invoice', [PaymentController::class, 'invoice'])->name('payment.invoice');
 
     Route::get('/transaction/{transaction}/payment/create', [PaymentController::class, 'create'])->name('transaction.payment.create');
     Route::post('/transaction/{transaction}/payment/store', [PaymentController::class, 'store'])->name('transaction.payment.store');
+
+    /* Chartjs routes */ 
 
     Route::get('/get-dialy-guest-chart-data', [ChartController::class, 'dialyGuestPerMonth']);
     Route::get('/get-dialy-guest/{year}/{month}/{day}', [ChartController::class, 'dialyGuest'])->name('chart.dialyGuest');
@@ -75,22 +81,27 @@ Route::group(['middleware' => ['auth', 'checkRole:Super,Admin,Customer']], funct
         'show'
     ]);
 
+    /* Working on the notifications API */
+
     Route::view('/notification', 'notification.index')->name('notification.index');
+    Route::get('/mark-all-as-read', [NotificationsController::class, 'markAllAsRead'])->name('notification.markAllAsRead');
+    Route::get('/notification-to/{id}',[NotificationsController::class, 'routeTo'])->name('notification.routeTo');
 
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
 
+    /* Logout */
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
-    Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+    Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 
-    Route::get('/mark-all-as-read', [NotificationsController::class, 'markAllAsRead'])->name('notification.markAllAsRead');
-
-    Route::get('/notification-to/{id}',[NotificationsController::class, 'routeTo'])->name('notification.routeTo');
 });
 
+    /* Login */
 Route::view('/login', 'auth.login')->name('login');
 Route::post('/postLogin', [AuthController::class, 'postLogin'])->name('postlogin');
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+    /* Notification to admin when someone reserve a room */
 
 Route::get('/sendEvent', function () {
     $superAdmins = User::where('role', 'Super')->get();

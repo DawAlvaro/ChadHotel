@@ -30,6 +30,16 @@
                                 </div>
                             @enderror
                         </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Phone</label>
+                            <input type="phone" class="form-control @error('phone') is-invalid @enderror" " id=" phone"
+                                name="phone" value="{{ old('phone') }}">
+                            @error('phone')
+                                <div class="text-danger mt-1">
+                                    {{ $message }}
+                                </div>
+                            @enderror
+                        </div>
                         <div class=" col-md-6">
                             <label for="password" class="form-label">Password</label>
                             <input type="password" class="form-control @error('password') is-invalid @enderror" " id="

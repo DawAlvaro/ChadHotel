@@ -181,9 +181,9 @@
                                                             </svg>
                                                         </a>
                                                     </form>
-                                                    <a class="btn btn-light btn-sm rounded shadow-sm border p-0 m-0 disabled"
-                                                        href="/user/detail/{{ $user->id }}" data-bs-toggle="tooltip"
-                                                        data-bs-placement="top" title="Detail User">
+                                                    <a class="btn btn-light btn-sm rounded shadow-sm border p-0 m-0"
+                                                        href="{{ route('user.show', ['user' => $user->id]) }}"
+                                                        data-bs-toggle="tooltip" data-bs-placement="top" title="Detail User">
                                                         <svg width="25" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6"
                                                             fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                             <path stroke-linecap="round" stroke-linejoin="round"

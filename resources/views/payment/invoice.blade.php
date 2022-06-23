@@ -32,7 +32,7 @@
         <div class="row d-flex justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="d-flex flex-row p-2"> <img src="{{ asset('img/logo/sip.png') }}" width="48">
+                    <div class="d-flex flex-row p-2"> <img src="{{ asset('img/logo/logo.png') }}" width="48">
                         <div class="d-flex flex-column"> <span class="font-weight-bold">Invoice</span>
                             <small>INV-{{ $payment->id }}</small>
                         </div>

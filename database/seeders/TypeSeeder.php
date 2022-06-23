@@ -33,21 +33,21 @@ class TypeSeeder extends Seeder
         ];
 
         $information = [
-            'Seperti namanya, jenis kamar standard room adalah tipe kamar hotel yang paling dasar di hotel. Biasanya, kamar tipe ini dibanderol dengan harga yang relatif murah. Fasilitas yang ditawarkan pun standar seperti kasur ukuran king size atau dua queen size. Namun, penawaran yang diberikan tergantung pada masing-masing hotel. Standard room hotel bintang 1 dan bintang 5 tentu berbeda.',
-            'Pada dasarnya, superior room adalah tipe kamar yang sedikit lebih baik dari tipe standard room. Perbedaannya dapat berupa dari fasilitas yang diberikan, interior kamar, atau pemandangan dari kamar.',
-            'Di atas tipe kamar hotel superior room adalah deluxe room. Kamar ini tentu memiliki kamar yang lebih besar. Tersedia pilihan kasur yang bisa kamu pilih, double bed atau twin bed. Biasanya, dari segi interior kamar ini terkesan lebih mewah.',
-            'Tipe kamar hotel junior suite room ditandai dengan adanya ruang tamu. Namun, ruang tamu tersebut masih berada satu ruangan dengan tempat tidur. Ruang tamu tersebut biasanya dibatasi atau disekat dengan lemari besar agar tempat tidur tidak terlihat. ',
-            'Suite room berada di atas tipe kamar hotel junior suite room. Ruang tamu di kamar hotel ini terpisah dari kamar tidur. Dari segi fasilitas, tentu berbeda dari junior suite room. Selain ruang tamu, biasanya tipe kamar hotel ini dilengkapi dengan dapur.',
-            'Presidential suite adalah tipe kamar hotel yang terbaik dan paling mahal. Bahkan, tidak semua hotel memiliki presidential suite. Fasilitas yang ditawarkan pun tentu yang terbaik, mulai dari interior, pemandangan kamar, dan masih banyak lainnya.',
-            'Single room adalah tipe kamar hotel yang paling umum. Tipe kamar hotel ini terdiri dari satu single bed, sofa, dan kamar mandi. Ukuran kamarnya juga tidak terlalu besar. Biasanya tipe kamar hotel ini dipilih oleh para backpacker atau solo traveler karena fasilitasnya memang untuk satu orang dan harga yang murah.',
-            'Dari namanya saja, sudah bisa ditebak bahwa tipe kamar hotel ini memiliki dua tempat tidur ukuran single yang terpisah. Tipe kamar hotel ini cocok digunakan untuk suami istri atau menginap bersama teman dengan jumlah orang 2-3 orang.',
-            'Ingin menginap dengan lebih nyaman dan fasilitas yang lebih baik? Kamu bisa memesan tipe kamar hotel double room. Tipe kamar hotel ini biasanya memiliki ukuran kasur yang besar seperti king size. Double room ini cocok banget buat pasangan suami istri yang ingin berbulan madu.',
-            'Pergi traveling bersama keluarga besar atau teman-teman? Kamu bisa pilih tipe kamar hotel family room. Dari segi ukuran kamar, tentu jauh lebih luas daripada tipe kamar hotel lainnya. Tipe kamar hotel family room ini biasanya tersedia satu tempat dengan ukuran king size dan satu tempat tidur dengan ukuran yang lebih kecil.',
-            'Tipe kamar hotel dengan Connecting Room ini cocok untuk kamu yang pergi bersama keluarga besar atau rombongan tetapi ingin memiliki kamar tidur masing-masing.  Kamar kamu dan anggota keluarga lainnya akan bersebelahan dan terdapat pintu yang menghubungkan kamar kalian. Sehingga, kalau kamu atau anggota keluarga lainnya ingin ke kamar satu sama lain, bisa melalui connecting door dan tidak perlu repot melalui pintu depan, Toppers.',
-            'Murphy room ini adalah tipe kamar hotel yang menyediakan sofa bed di kamar. Sofa bed ini digunakan sebagai tempat tidur pada malam hari dan ruang tamu di siang hari. Besar kamar Murphy Room ini sekitar 20 – 40 m. Wah, seru, ya konsepnya!',
-            'Tipe kamar Accessible Room/Disable Room ini tersedia untuk para tamu yang memiliki keterbatasan. Adanya tipe kamar ini juga diwajibkan oleh hukum, loh, untuk menghindari diskriminasi. Hal ini juga dibuat agar memudahkan tamu-temu tersebut saat menginap di hotel.',
-            'Biasanya tamu tidak diizinkan untuk merokok di dalam kamar. Tetapi, banyak hotel yang sudah menyediakan tipe kamar hotel Smoking/Non Smoking Room. Hal ini juga berguna agar tidak mengganggu tamu selanjutnya dengan aroma rokok yang terdapat pada kamar. Jadi, kalau kamu seorang perokok, sekarang bisa memesan kamar dengan tipe smooking room.',
-            'Kamu ingin langsung berenang saat buka pintu kamar? Atau punya private pool? Pilih tipe kamar hote Cabana Room! Tipe kamar hotel ini memang didesain dengan kolam renang private untuk pemesan kamar tersebut. Luas kamar Cabana Room ini sekitar 30 – 40 m.',
+            'This type of room is priced relatively cheaply. The facilities offered are standard, such as a king size bed or two queen sizes.',
+            'The difference from Standard can be from the facilities provided, the interior of the room, or the view from the room.',
+            'There is a choice of mattresses that you can choose, double beds or twin beds. The interior looks more luxurious.',
+            'The living room is usually limited or insulated with a large wardrobe so that the bed is not visible. ',
+            'The living room in this hotel room is separate from the bedroom. This type of hotel room is equipped with a kitchen.',
+            'The facilities offered are of course the best, starting from the interior, room views, and many others.',
+            'This room type consists of a single bed, sofa, and bathroom. The size of the room is also not too big.',
+            'This room type has two separate single beds. This type of hotel room is suitable for husband and wife or staying with friends with 2-3 people.',
+            'This type of hotel room usually has a large mattress size such as a king size. This double room is perfect for married couples who want to honeymoon.',
+            'This type of family room hotel room is usually available in one place with a king size and one bed with a smaller size.',
+            'Your rooms and other family members will be next to each other and there is a door connecting your rooms.',
+            'This Murphy room is a type of hotel room that provides a sofa bed in the room. This sofa bed is used as a bed at night and a living room during the day.',
+            'This Accessible Room/Disable Room type is available for guests with disabilities.',
+            'If you are a smoker, now you can book a smoking room type.',
+            'Do you want to swim right away when you open the bedroom door? Or have a private pool? Choose the Cabana Room hotel room type.',
         ];
 
         for ($i = 0; $i < count($name); $i++) {

@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('phone');
             $table->string('avatar')->nullable();
             $table->enum('role', ['Super', 'Admin', 'Customer']);
-            $table->enum('gender',['Male', 'Female']);
+            $table->enum('gender',['Male', 'Female'])->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('random_key');

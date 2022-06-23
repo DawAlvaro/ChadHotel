@@ -17,17 +17,17 @@
                         <div class="row mb-3">
                             <div class="col-lg-12">
                                 <div class="d-flex justify-content-center">
-                                    <img src="img/logo/sip.png" width="100" height="100" class="rounded-circle mx-auto"
+                                    <img src="img/logo/logo.png" width="100" height="100" class="rounded-circle mx-auto"
                                         alt="logo" style="background-color: white;">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-12">
-                                <h5 class="card-title text-center">Sistem Informasi Perusahaan</h5>
+                                <h5 class="card-title text-center">ChadHotel System Information</h5>
                             </div>
                         </div>
-                        <form class="form-signin" action="http://localhost:81/sip/pelamar/fungsi_daftar" method="post">
+                        <form class="form-signin" action="" method="post">
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-label-group">
@@ -43,18 +43,18 @@
                                     <div class="form-label-group">
                                         <input type="password" id="password_konfirmasi" name="password_konfirmasi"
                                             class="form-control" placeholder="Repead Password" value="" required>
-                                        <label for="password_konfirmasi">Konfirmasi password</label>
+                                        <label for="password_konfirmasi">Confirm Password</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-lg-12 d-flex justify-content-center">
                                     <button class="btn btn-lg btn-primary text-white btn-block text-uppercase"
-                                        type="submit">Daftar</button>
+                                        type="submit">Submit</button>
                                 </div>
                             </div>
                             <hr class="my-4">
-                            <p class="text-center">Sudah memiliki akun? <a href="/login">masuk</a></p>
+                            <p class="text-center">Have an account? <a href="/login">Login</a></p>
                         </form>
                     </div>
                 </div>

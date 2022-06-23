@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{-- Icon --}}
-    <link rel="icon" href="{{ asset('img/logo/sip.png') }}">
+    <link rel="icon" href="{{ asset('img/logo/logo.png') }}">
 
     <!-- Bootstrap CSS -->
     {{-- <link href="{{ asset('package/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet"

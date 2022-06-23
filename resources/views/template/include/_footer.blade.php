@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container footer">
     <div class="row align-items-center align-baseline">
         <div class="col-6">
             <small>ChadHotel© 2022.</small>
