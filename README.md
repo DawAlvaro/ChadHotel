@@ -76,6 +76,9 @@ http://vast-chamber-57301.herokuapp.com/
 # Enlace al video funcionamiento en Heroku:
 https://youtu.be/2SvO8eDsnfw
 
+# Enlace al minivideo funcionamiento chartjs
+https://youtu.be/XeTlYxravK0
+
 # Tecnología
 - Para el backend usaré PHP en el framework Laravel v8
 - Para el frontend usaré tailwind / css, y probablamente jquery
