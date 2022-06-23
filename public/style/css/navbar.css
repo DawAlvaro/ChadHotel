@@ -226,3 +226,50 @@
         background-color: #e4e6eb;
         border-radius: 0.2rem
     }
+
+    #square1, #square2{
+        stroke:yellow;
+        stroke-opacity:1;
+        animation: animateh 6s alternate infinite;
+    }
+
+    #star, #star2, #star3{
+        stroke: yellow;
+        stroke-dasharray:23 ;
+        fill: transparent;
+        stroke-dashoffset: 23 ;
+        animation: animatestar 6s linear forwards infinite;
+    }
+
+    @keyframes  animatestar{
+        0% {
+            stroke-dashoffset: 0;
+        }
+        40% {
+            stroke-dashoffset: 23;
+        }
+        80%{
+            stroke-dashoffset: 46;
+            fill: transparent;
+        }
+        100%{
+            stroke-dashoffset: 46;
+            fill: yellow;
+        }
+
+    }
+
+    @keyframes animateh {
+        0% {
+            stroke-opacity:1;
+        }
+        40%{
+            stroke-opacity: 0;
+        }
+        80%{
+            stroke-opacity: 1;
+        }
+        100%{
+            stroke-opacity:0;
+        }
+    }

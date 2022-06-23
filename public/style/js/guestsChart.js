@@ -34,24 +34,14 @@ $(function() {
                 data: {
                     labels: response.day,
                     datasets: [{
-                            type: 'line',
+                            type: 'bar',
                             data: response.guest_count_data,
-                            backgroundColor: 'transparent',
-                            borderColor: '#007bff',
-                            pointBorderColor: '#007bff',
-                            pointBackgroundColor: '#007bff',
+                            backgroundColor: 'black',
+                            borderColor: 'red',
+                            pointBorderColor: 'red',
+                            pointBackgroundColor: 'red',
                             fill: false
                         },
-                        // {
-                        //     type: 'line',
-                        //     // Data bulan sebelumnya
-                        //     data: [60, 80, 70, 67, 80, 77, 100],
-                        //     backgroundColor: 'tansparent',
-                        //     borderColor: '#ced4da',
-                        //     pointBorderColor: '#ced4da',
-                        //     pointBackgroundColor: '#ced4da',
-                        //     fill: false
-                        // }
                     ]
                 },
                 options: {

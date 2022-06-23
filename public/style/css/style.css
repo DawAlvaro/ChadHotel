@@ -1,7 +1,8 @@
 body {
     /* background-color: #f3f4f6; */
-    background-color: #f0f2f5;
+    background-image: url(../../img/background/Background\ \(1\).png);
 }
+
 
 .myBtn {
     background-color: #fff;
@@ -13,7 +14,7 @@ body {
 }
 
 .wrapfooter {
-    margin-top: 200vh;
+    margin-top: 100vh;
 }
 
 .card {
@@ -62,6 +63,7 @@ body {
     #wrapper.toggled #sidebar-wrapper {
         margin-left: -4.5rem;
     }
+    
 }
 
 
@@ -104,4 +106,12 @@ body {
 a,
 a:active {
     color: #65676b;
+}
+
+
+/* Footer */
+
+.footer{
+    background-color: black;
+    color: yellow;
 }
