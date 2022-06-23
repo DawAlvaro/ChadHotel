@@ -74,7 +74,7 @@ Es una aplicación de reserva de hoteles. El usuario podrá ver y reservar todas
 http://vast-chamber-57301.herokuapp.com/
 
 # Enlace al video funcionamiento en Heroku:
-Principal: https://youtu.be/2SvO8eDsnfw
+Principal: https://youtu.be/2SvO8eDsnfw <br>
 Minivideo chartjs: https://youtu.be/XeTlYxravK0
 
 # Tecnología
@@ -102,7 +102,7 @@ Contraseña: admin
 ![image](https://user-images.githubusercontent.com/91119635/175100185-3528a511-6689-4743-85d1-b2973f4f204d.png)
 
 Se puede ver un gráfico con las reservas activas del mes y una tabla con las mismas y la información correspondiente
-![image](https://user-images.githubusercontent.com/91119635/175100825-0fd3988d-7431-4eef-ab5d-8e1a7c7f0d93.png)
+![image](https://user-images.githubusercontent.com/91119635/175251494-571bf9d9-b6c9-4ba7-8a4b-0c33e19e3115.png)
 
 Además pinchando en el gráfico en un dia se puede ver quien ha reservado la habitación
 ![image](https://user-images.githubusercontent.com/91119635/175101305-580b220a-6838-4a43-8671-1556f8a9e20d.png)
